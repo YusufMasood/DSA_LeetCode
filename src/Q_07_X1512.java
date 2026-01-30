@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Q_07 {
+public class Q_07_X1512 {
     public static void main(String[] args) {
 
         //Q.No. 1512. Number of Good Pairs

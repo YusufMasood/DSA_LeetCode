@@ -1,4 +1,4 @@
-public class Q_03 {
+public class Q_03_X1480 {
     public static void main(String aurg[]){
 
 

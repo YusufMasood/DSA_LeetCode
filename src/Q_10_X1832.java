@@ -1,4 +1,4 @@
-public class Q_10 {
+public class Q_10_X1832 {
     public static void main(String[] args) {
 
 

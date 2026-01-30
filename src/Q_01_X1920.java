@@ -1,5 +1,5 @@
 
-public class Q_01 {
+public class Q_01_X1920 {
     public static void main(String[] args) {
 
 

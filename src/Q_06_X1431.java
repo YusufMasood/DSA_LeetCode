@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Q_06 {
+public class Q_06_X1431 {
     public static void main(String[] args) {
 
 

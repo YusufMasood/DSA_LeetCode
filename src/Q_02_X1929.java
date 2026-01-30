@@ -1,6 +1,6 @@
 
 
-public class Q_02 {
+public class Q_02_X1929 {
     public static void main(String args[]){
 
 
