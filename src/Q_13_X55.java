@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 public class Q_13_X55 {
 
 
@@ -5,14 +7,22 @@ public class Q_13_X55 {
     public static void main(String[] args) {
 
 
-        int[] nums = {1, 2, 0};
+        int[] nums = {1, 2, 3};
 
-        int snum = Integer.MAX_VALUE;
+        HashSet<Integer> numset = new HashSet<>(nums.length);
 
-        for(int i = 0; i  < nums.length; i++){
-            if(nums[i] < snum && nums[i] > 0){
-                snum = nums[i];
+        for (int n : nums) {
+            if(n > 0) {
+                numset.add(n);
             }
+
+        }
+
+        int snum = 1;
+
+
+        while (numset.contains(snum)){
+            snum++;
         }
 
         System.out.println(snum);
