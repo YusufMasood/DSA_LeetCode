@@ -7,8 +7,8 @@ public class Q_14_X34 {
         //Q.No. 34. Find First and Last Position of Element in Sorted Array
 
 
-        int[] arr = {5,7,7,8,8,10};
-        int target = 8;
+        int[] arr = {5,7,7,8,8,8,10,10,10,10,10};
+        int target = 10;
 
         int[] res =  new int[2];
 
@@ -16,6 +16,7 @@ public class Q_14_X34 {
         res[1] = lastAppearence(arr,target);
 
         System.out.println(Arrays.toString(res));
+        System.out.println("Total number " + target + " in the array is :- " + (res[1] - res[0] + 1));
     }
 
 
