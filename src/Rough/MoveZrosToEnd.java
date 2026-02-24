@@ -1,12 +1,10 @@
+package Rough;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 
-import static java.util.Collections.swap;
-
-public class Rough {
+public class MoveZrosToEnd {
 
     public static void main(String[] args) {
-
 
         int[] num = {0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1 };
 
@@ -20,7 +18,9 @@ public class Rough {
 
         System.out.println(numtemp);
 
-        //Brute force approach
+        moveZeros(numtemp);
+
+
 
         for(int i = 0; i < num.length; i++){
             if(numtemp.get(i) == 0){
@@ -32,12 +32,8 @@ public class Rough {
 
         System.out.println(numtemp);
 
-        moveZeros(numtemp);
-
     }
 
-
-    //Optimized approach
 
 
     static void  moveZeros(ArrayList<Integer> num){
@@ -57,6 +53,5 @@ public class Rough {
 
         System.out.println(num);
     }
-
 
 }
