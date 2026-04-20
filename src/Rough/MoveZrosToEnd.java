@@ -1,12 +1,14 @@
 package Rough;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 
 public class MoveZrosToEnd {
 
     public static void main(String[] args) {
 
-        int[] num = {0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1 };
+        int[] num = {1};
 
 
 
@@ -20,36 +22,26 @@ public class MoveZrosToEnd {
 
         moveZeros(numtemp);
 
-
-
-        for(int i = 0; i < num.length; i++){
-            if(numtemp.get(i) == 0){
-                int temp = numtemp.get(i);
-                numtemp.remove(i);
-                numtemp.add(numtemp.size(),temp);
-            }
-        }
-
-        System.out.println(numtemp);
-
     }
 
 
 
     static void  moveZeros(ArrayList<Integer> num){
 
-        int insPosition = 0;
+        int zeroPos = 0;
+
         for(int i = 0; i < num.size(); i++){
-            if(num.get(i) != 0){
-                num.set(insPosition,num.get(i));
-                insPosition++;
+
+            if(num.get(i)!=0){
+                int temp = num.get(i);
+                num.set(i, num.get(zeroPos));
+                num.set(zeroPos,temp);
+                zeroPos++;
             }
+
         }
 
-        while(insPosition < num.size()){
-            num.set(insPosition,0);
-            insPosition++;
-        }
+
 
         System.out.println(num);
     }
