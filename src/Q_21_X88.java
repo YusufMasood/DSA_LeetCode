@@ -1,3 +1,5 @@
+import static java.util.Collections.swap;
+
 public class Q_21_X88 {
     public static void main(String[] args) {
 
@@ -17,6 +19,7 @@ public class Q_21_X88 {
         for(int val : num1){
             System.out.print(val + " ");
         }
+
 
 
     }
